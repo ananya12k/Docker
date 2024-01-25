@@ -61,6 +61,8 @@ Imagine a container as a box. This box has everything that an app needs to run. 
 
 Docker is a containerization platform. It is a platform to build, run and ship applications in containers.Help us to run apps in isolation.
 
+All the docker containers are based on lightweight linux distributions.
+
 # Docker Architecture
 
 Docker has runtime, docker engine, orchestration, docker registry, docker client, docker hub.
@@ -114,10 +116,12 @@ Docker hub is the part that helps us to store docker images. It is the part that
 ## Images
 
 Images are actual artifacts that contain actual code, runtime, system tools, libraries, OS. They contain all the configurations that are needed to run an app.
+Images are based on lightweight linux distributions.
+The images have OS file, dependencies, libraries, code, runtime, system tools, configurations, environment variables, entrypoint, command, metadata, etc.
 
 ## Containers
 
-Containers are the running instances of the images. 
+Containers are the running instances of the images.
 
 # Docker Commands
 
@@ -163,5 +167,46 @@ Containers are the running instances of the images.
 - `docker build -t <dockerhub_username>/<image_name>:<tag_name> <path_to_dockerfile>` - To build an image with tag
 - `docker push <dockerhub_username>/<image_name>:<tag_name>` - To push an image to docker hub
 - `docker pull <dockerhub_username>/<image_name>:<tag_name>` - To pull an image from docker hub
+- `docker login` - To login to docker hub
+- `docker tag <image_name>:<tag_name> <dockerhub_username>/<image_name>:<tag_name>` - To tag an image
+- `docker volume ls` - To check the volumes
+- `docker volume create <volume_name>` - To create a volume
+- `docker volume inspect <volume_name>` - To inspect a volume
+- `docker volume rm <volume_name>` - To remove a volume
+- `docker volume prune` - To remove all the volumes
 
-<!-- Set usernname and password -->
+# Dockerfile
+
+Dockerfile is a file that contains all the instructions that are needed to build an image.
+
+# Dockerfile Instructions
+
+- `FROM` - To specify the base image
+- `RUN` - To run a command
+- `CMD` - To run a command when the container is started
+- `EXPOSE` - To expose a port
+- `ENV` - To set an environment variable
+- `WORKDIR` - To set the working directory
+- `COPY` - To copy files from host to container
+- `ADD` - To copy files from host to container
+- `ENTRYPOINT` - To run a command when the container is started
+- `VOLUME` - To create a volume
+- `USER` - To set the user
+- `ARG` - To set the arguments
+- `ONBUILD` - To run a command when the image is used as a base image
+
+# Dockerfile Instructions Examples
+
+- `FROM <base_image>` - To specify the base image
+- `RUN <command>` - To run a command
+- `CMD <command>` - To run a command when the container is started
+- `EXPOSE <port>` - To expose a port
+- `ENV <env_variable_name> <env_variable_value>` - To set an environment variable
+- `WORKDIR <path>` - To set the working directory
+- `COPY <source> <destination>` - To copy files from host to container
+- `ADD <source> <destination>` - To copy files from host to container
+- `ENTRYPOINT <command>` - To run a command when the container is started
+- `VOLUME <path>` - To create a volume
+- `USER <user>` - To set the user
+- `ARG <arg_name> <arg_value>` - To set the arguments
+- `ONBUILD <command>` - To run a command when the image is used as a base image
