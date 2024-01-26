@@ -210,3 +210,24 @@ Dockerfile is a file that contains all the instructions that are needed to build
 - `USER <user>` - To set the user
 - `ARG <arg_name> <arg_value>` - To set the arguments
 - `ONBUILD <command>` - To run a command when the image is used as a base image
+
+
+# Docker Compose
+
+Docker compose is a tool that helps us to run multiple containers at the same time.
+
+# Docker Compose Commands
+
+- `docker-compose version` - To check the version of docker compose
+- `docker-compose` - To check all the commands of docker compose
+- `docker-compose up` - To run the containers
+- `docker-compose up -d` - To run the containers in detached mode
+- `docker-compose down` - To stop the containers
+- `docker-compose ps` - To check the running containers
+- `docker-compose ps -a` - To check all the containers
+- `docker-compose logs` - To check the logs of the containers
+- `docker-compose logs -f` - To check the logs of the containers in real time
+- `docker-compose exec <service_name> <command>` - To run a command in a container
+- `docker-compose exec <service_name> bash` - To run a container in interactive mode with bash
+- `docker-compose exec <service_name> sh` - To run a container in interactive mode with sh
+- `docker-compose exec <service_name> zsh` - To run a container in interactive mode with zsh
