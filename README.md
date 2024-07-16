@@ -143,6 +143,7 @@ Containers are the running instances of the images.
 - `docker run -it <image_name> /bin/sh` - To run a container in interactive mode with sh
 - `docker run -it <image_name> /bin/zsh` - To run a container in interactive mode with zsh
 - `docker start <container_name>` - To start a container
+-  `docker pause <container_name>` - To pause a container
 - `docker stop <container_name>` - To stop a container
 - `docker exec -it <container_name> bash` - To run a container in interactive mode with bash
 - `docker exec -it <container_name> sh` - To run a container in interactive mode with sh
