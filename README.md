@@ -18,11 +18,11 @@ What used to happen before docker?
 - We used to have a server
 - Only one app could run on one server
 - If we wanted to run multiple apps, we needed multiple servers, load increases.
-- So for a new app, we needed a new server, which was expensive.
+- So, for a new app, we needed a new server, which was expensive.
 
-This in turn becomes liablity for the company since we need moere hardware, more maintenance, more cost.
+This, in turn, becomes liability for the company since we need more hardware, more maintenance, more cost.
 
-Now the question is who solves this problem?
+Now the question is, who solves this problem?
 
 - <b>VMWare</b> - how?
   By using virtualization, we can run multiple virtual machines on a single server.(Virtual Machines are like a computer inside a computer)
@@ -35,16 +35,16 @@ Modern Problems(Not working in my machine):
 
 - Version conflicts
 - Dependency conflicts
-- Environment conflicts
+- Environmental conflicts
 - Migration of apps from one machine to another
-- Open source software not working on all machines
+- Open source software is not working on all machines
 - Not able to run apps on different OSs
 
 Solution for VM:
 
-- Companies started run apps in isolation (New VM for each app)
+- Companies started running apps in isolation (New VM for each app)
 - Containers were born
-- Containers are like VMs but they don't need their own OS
+- Containers are like VMs, but they don't need their OS
 - They share the OS of the host machine
 - They are lightweight
 - They are fast
@@ -53,9 +53,9 @@ Solution for VM:
 
 # What is a container?
 
-Container are VM like machines but they don't need their own OS. They share the OS of the host machine. They are lightweight, fast, portable and open source.
+Containers are VM-like machines, but they don't need their OS. They share the OS of the host machine. They are lightweight, fast, portable and open source.
 
-Imagine a container as a box. This box has everything that an app needs to run. It has the code, it has the runtime, it has the system tools, it has the libraries, it has the OS. Everything that an app needs to run is inside this box. So the app can run on any machine that has docker installed on it.
+Imagine a container as a box. This box has everything that an app needs to run. It has the code, it has the runtime, it has the system tools, it has the libraries, it has the OS. Everything that an app needs to run is inside this box. So the app can run on any machine that has Docker installed on it.
 
 # What is Docker?
 
@@ -85,21 +85,21 @@ Dockers runtime is the container engine. It is the core of docker. It is the par
 
 ## Docker Orchestration
 
-Docker orchestration is the part that helps us to manage multiple containers. It helps us to manage multiple containers in multiple machines. It helps us to manage multiple containers in multiple machines in multiple environments. It helps us to manage multiple containers in multiple machines in multiple environments in multiple clouds.
-
+Docker orchestration is the part that helps us to manage multiple containers. It helps us to manage multiple containers in multiple machines in multiple environments in multiple clouds.
+s.
 - Docker Swarm
 - Kubernetes
 
 ## Docker Registry
 
-Docker registry is the part that helps us to store docker images. It is the part that helps us to store the boxes. It is the part that helps us to store the containers. It is the part that helps us to store the apps. It is the part that helps us to store the apps in the containers. It is the part that helps us to store the apps in the boxes.
+Docker registry is the part that helps us to store Docker images. It is the part that helps us to store the boxes. It is the part that helps us store the containers. It is the part that helps us to store the apps. It is the part that helps us to store the apps in the containers. It is the part that helps us to store the apps in the boxes.
 
 - Docker Hub
 - Docker Registry
 
 ## Docker Client
 
-Docker client is the part that helps us to interact with docker. It is the part that helps us to interact with the docker engine. It is the part that helps us to interact with the docker runtime. It is the part that helps us to interact with the docker orchestration. It is the part that helps us to interact with the docker registry. It is the part that helps us to interact with the docker hub. It is the part that helps us to interact with the docker registry.
+Docker client is the part that helps us to interact with Docker. It is the part that helps us to interact with the docker engine. It is the part that helps us to interact with the docker runtime. It is the part that helps us to interact with the docker orchestration. It is the part that helps us to interact with the docker registry. It is the part that helps us to interact with the docker hub. It is the part that helps us to interact with the docker registry.
 
 ## Docker Hub
 
